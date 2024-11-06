@@ -1,8 +1,7 @@
 """
 Nested Dict total count using FOR Loop:
 """
-import os
-print(os.path)
+
 employee_data = {
     'employee1': {
         'name': 'John Doe',
@@ -30,4 +29,3 @@ for employee in employee_data.values():
     total_age += employee['age']
 
 print("Total age of all employees:", total_age)  
-print(os.path)

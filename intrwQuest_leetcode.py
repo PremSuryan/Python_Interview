@@ -20,25 +20,41 @@ class Solution:
     def __init__(self, nums: list[int], k: int):
         """
         Do not return anything, modify nums in-place instead.
+
         """
         self.nums = nums
-        self.k =k
+        self.k = k
+    def rotate_array(self):
+            self.k=k%len(nums)
+            nums[:] = nums[::-1]
+            nums[:k] = nums[:k][::-1]
+            nums[k:] = nums[k:][::-1]
+            
+    
+nums=[1,2,3,4,5,6,7]
+k=3
+obj = Solution(nums,k)
+obj.rotate_array()
 
-    def rotate(self):
-        # rotate_num = []
-        num1 = self.nums
-        n = len(num1) 
+#--------------------------------------------------
+#         self.nums = nums
+#         self.k =k
 
-        # self.k %= n  # Normalize k to avoid unnecessary rotations
-        print(self.nums[-self.k:])   #[5,6,7]
-        self.nums[:] = self.nums[-self.k:] + self.nums[:-self.k] 
+#     def rotate(self):
+#         # rotate_num = []
+#         num1 = self.nums
+#         n = len(num1) 
+
+#         # self.k %= n  # Normalize k to avoid unnecessary rotations
+#         print(self.nums[-self.k:])   #[5,6,7]
+#         self.nums[:] = self.nums[-self.k:] + self.nums[:-self.k] 
         
 
 
 
-input_nums = [1, 2, 3, 4, 5, 6, 7]
-k=3
-obj = Solution(input_nums, k)
-obj.rotate()  
-print(obj.nums) 
+# input_nums = [1, 2, 3, 4, 5, 6, 7]
+# k=3
+# obj = Solution(input_nums, k)
+# obj.rotate()  
+# print(obj.nums) 
 
