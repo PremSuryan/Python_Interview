@@ -21,8 +21,6 @@ Notice that the order of the output and the order of the triplets does not matte
 """
 
 
-
-
 def three_sum(nums):
     # a = sorted(nums)  # Step 1: Sort the array output:[]
     print(nums.sort())
