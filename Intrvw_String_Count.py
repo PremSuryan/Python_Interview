@@ -1,5 +1,5 @@
 """
-# input = "aapppak"
+# input = "aapppak" 
 # output = "a2p3a1k1"
 
 """

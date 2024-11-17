@@ -6,7 +6,7 @@ def is_palindrome(s):
     s = ''.join(s.split()).lower()
     print(s)
 
-    # Check if the string is equal to its reverse
+    # Check if the string is equal to its reverse  8870998666
     return s == s[::-1]
 
 # Example usage
